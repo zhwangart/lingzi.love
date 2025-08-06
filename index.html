@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>玲子</title>
+    <style>
+      body {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+      }
+      /* body::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 30%;
+        background-size: cover;
+        background-image: url(overlay.png), url(ZELDA.JPG);
+        background-position: bottom, top;
+      } */
+      h1 {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: bold;
+        font-size: 16vw;
+        line-height: 1;
+        font-family: '宋体','宋体-简','华文宋体',"Helvetica Neue",Helvetica,Arial,sans-serif;
+        white-space: nowrap; 
+      }
+      h1 small {
+        font-size: 8vw;
+      }
+      h1.clip {
+        background-image: url(Lingzi.jpg);
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      @keyframes clipAnimation {
+        0% {
+          background-position: center;
+        }
+        25% {
+          background-position: bottom;
+        }
+        75% {
+          background-position: top;
+        }
+        100% {
+          background-position: center;
+        }
+      }
+      .animation {
+        animation: clipAnimation 30s linear alternate;
+      }
+      @media (min-width: 992px) {
+        h1 {
+          font-size: 8vw;
+        }
+        h1 small {
+          font-size: 4rem;
+        }
+      }
+    </style>
+</head>
+<body>
+  <h1 class="clip animation">Ling Zi <br><small>若可重来此生唯你</small></h1>
+</body>
+</html>
